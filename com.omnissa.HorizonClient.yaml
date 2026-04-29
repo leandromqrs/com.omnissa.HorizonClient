@@ -100,7 +100,7 @@ modules:
   - name: gtkmm
     buildsystem: meson
     config-opts:
-      - -Dbuild-examples=false
+      - -Dbuild-demos=false
       - -Dbuild-documentation=false
       - -Dbuild-tests=false
       - --libdir=lib
