@@ -45,6 +45,10 @@ modules:
 
   - name: libsigc++
     buildsystem: meson
+    config-opts:
+      - -Dbuild-examples=false
+      - -Dbuild-documentation=false
+      - --libdir=lib
     sources:
       - type: archive
         url: https://download.gnome.org/sources/libsigc++/2.10/libsigc++-2.10.8.tar.xz
@@ -52,6 +56,10 @@ modules:
 
   - name: glibmm
     buildsystem: meson
+    config-opts:
+      - -Dbuild-examples=false
+      - -Dbuild-documentation=false
+      - --libdir=lib
     sources:
       - type: archive
         url: https://download.gnome.org/sources/glibmm/2.66/glibmm-2.66.7.tar.xz
@@ -59,6 +67,11 @@ modules:
 
   - name: cairomm
     buildsystem: meson
+    config-opts:
+      - -Dbuild-examples=false
+      - -Dbuild-documentation=false
+      - -Dbuild-tests=false
+      - --libdir=lib
     sources:
       - type: archive
         url: https://www.cairographics.org/releases/cairomm-1.14.5.tar.xz
@@ -66,6 +79,9 @@ modules:
 
   - name: pangomm
     buildsystem: meson
+    config-opts:
+      - -Dbuild-documentation=false
+      - --libdir=lib
     sources:
       - type: archive
         url: https://download.gnome.org/sources/pangomm/2.46/pangomm-2.46.4.tar.xz
@@ -73,6 +89,9 @@ modules:
 
   - name: atkmm
     buildsystem: meson
+    config-opts:
+      - -Dbuild-documentation=false
+      - --libdir=lib
     sources:
       - type: archive
         url: https://download.gnome.org/sources/atkmm/2.28/atkmm-2.28.4.tar.xz
@@ -80,6 +99,11 @@ modules:
 
   - name: gtkmm
     buildsystem: meson
+    config-opts:
+      - -Dbuild-examples=false
+      - -Dbuild-documentation=false
+      - -Dbuild-tests=false
+      - --libdir=lib
     sources:
       - type: archive
         url: https://download.gnome.org/sources/gtkmm/3.24/gtkmm-3.24.9.tar.xz
