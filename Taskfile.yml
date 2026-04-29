@@ -10,7 +10,7 @@ tasks:
   build:
     desc: Build the Flatpak
     cmds:
-      - flatpak-builder --repo=repo --force-clean build-dir com.vmware.HorizonClient.yaml
+      - flatpak-builder --repo=repo --force-clean build-dir com.omnissa.HorizonClient.yaml
 
   clean:
     desc: Delete artifacts
